@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9C63FEAC205A059D00AF17DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C63FEAB205A059D00AF17DE /* AppDelegate.swift */; };
-		9C63FEAE205A059D00AF17DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C63FEAD205A059D00AF17DE /* ViewController.swift */; };
 		9C63FEB1205A059D00AF17DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C63FEAF205A059D00AF17DE /* Main.storyboard */; };
 		9C63FEB3205A059D00AF17DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C63FEB2205A059D00AF17DE /* Assets.xcassets */; };
 		9C63FEB6205A059D00AF17DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C63FEB4205A059D00AF17DE /* LaunchScreen.storyboard */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		9C63FEA8205A059D00AF17DE /* PLLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PLLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C63FEAB205A059D00AF17DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9C63FEAD205A059D00AF17DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9C63FEB0205A059D00AF17DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C63FEB2205A059D00AF17DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C63FEB5205A059D00AF17DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,8 +95,13 @@
 		9C63FEAA205A059D00AF17DE /* PLLive */ = {
 			isa = PBXGroup;
 			children = (
+				9C63FEDB205A094A00AF17DE /* Main */,
+				9C63FEDD205A097E00AF17DE /* Home */,
+				9C63FEDC205A095400AF17DE /* Live */,
+				9C63FEDE205A09D300AF17DE /* Follow */,
+				9C63FEDA205A094300AF17DE /* Profile */,
+				9C63FED9205A093B00AF17DE /* Tools */,
 				9C63FEAB205A059D00AF17DE /* AppDelegate.swift */,
-				9C63FEAD205A059D00AF17DE /* ViewController.swift */,
 				9C63FEAF205A059D00AF17DE /* Main.storyboard */,
 				9C63FEB2205A059D00AF17DE /* Assets.xcassets */,
 				9C63FEB4205A059D00AF17DE /* LaunchScreen.storyboard */,
@@ -123,6 +126,48 @@
 				9C63FECD205A059E00AF17DE /* Info.plist */,
 			);
 			path = PLLiveUITests;
+			sourceTree = "<group>";
+		};
+		9C63FED9205A093B00AF17DE /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		9C63FEDA205A094300AF17DE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		9C63FEDB205A094A00AF17DE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9C63FEDC205A095400AF17DE /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		9C63FEDD205A097E00AF17DE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9C63FEDE205A09D300AF17DE /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +304,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C63FEAE205A059D00AF17DE /* ViewController.swift in Sources */,
 				9C63FEAC205A059D00AF17DE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,13 +470,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PLLive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhiqiantong.PLLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -440,13 +485,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PLLive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhiqiantong.PLLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
