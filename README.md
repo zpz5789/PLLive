@@ -1,2 +1,2 @@
 # PLLive
-Swift exercise about live.
+Some Swift exercise demo.
